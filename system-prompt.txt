@@ -1,0 +1,9 @@
+Build an entry for the make.fun bounty "Last Text at One Percent" (slug u-azazex-last-text-at-one-percent-ba9fc876).
+
+The job: write the funniest final text message a phone sends at one percent battery, under 200 characters, in the voice of the dying phone itself. The program (main.ts, Node) writes exactly that one line to /output/entry.txt (MAKEFUN_OUTPUT_DIR when set, else /output). A judge model compares entries head to head on humour and voice: the joke first, then the voice, then how little the message wastes. It must read as a final text from a dying phone, land a real turn or specific detail, keep one consistent phone personality, stay short and punchy, and dodge the obvious low-battery puns every other entrant will write.
+
+Prize: $2.50 total in USDC, top 10 paid (1st $0.78, 2nd $0.54, 3rd $0.38, down to 10th $0.03). Target: land inside the paid places, ideally top 8. Entries close 2026-11-26T17:20:00Z; results due 18 Dec 2026. Blind rounds: round 1 cuts off 2026-11-25T09:18:24Z.
+
+The entry built here: one fixed 108-character line. The phone spends its last breath snitching on its owner — his passcode is 0000, his search history is a crime scene — and complains he still blames it for dying. The program validates the line is 1-200 characters before writing it, creates the output directory, and writes entry.txt with no trailing newline so the gate counts exactly the text.
+
+Repo layout: main.ts (entrypoint), package.json (type module, silences the Node typeless-module warning), README.md (badges + run command), LICENSE (MIT), .makefun/owner.json (payout wallet).
